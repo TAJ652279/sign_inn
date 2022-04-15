@@ -1,0 +1,41 @@
+/* withdraw the space */
+*{
+margin: 0;
+padding: 0;
+    
+    }
+    /* id selector */
+    #admin-form {
+    text-align: center; background-color: maroon; color: white;width: 45%; text-transform: uppercase; padding: 50px; margin: auto; }
+
+    /* desendent selector */
+    #admin-form h1::first-letter{
+    font-size: 80px;}
+    form {
+    }
+    input{
+    width: 100%;padding: 5px;}
+ /* attribute selector */
+ input[type="submit"]{
+ background-color: red;
+ width: 40%;
+transition: 0.8s;
+ }
+/* psudo class selector */
+
+ input[type="submit"]:hover{
+background-color: blue; 
+color: white;
+font-size: 18px;
+}
+input:focus{
+    background-color: gold;
+}
+/* psudo element selector */
+input::placeholder{
+    color: red;
+}
+::selection{
+    background-color: red;
+    color: magenta;
+}
